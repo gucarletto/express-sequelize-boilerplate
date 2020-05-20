@@ -1,0 +1,45 @@
+{
+  "name": "fidegg-api",
+  "version": "1.0.0",
+  "description": "API fidegg",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx nodemon --exec babel-node app.js",
+    "sequelize-skeleton": "npx sequelize init:models; npx sequelize init:config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gucarletto/fidegg-api.git"
+  },
+  "keywords": [
+    "fidegg"
+  ],
+  "author": "Gustavo Carletto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gucarletto/fidegg-api/issues"
+  },
+  "homepage": "https://github.com/gucarletto/fidegg-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "pg": "^8.1.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "faker": "^4.1.0",
+    "lodash.random": "^3.2.0",
+    "lodash.times": "^4.3.2",
+    "nodemon": "^2.0.4",
+    "sequelize-cli": "^5.5.1"
+  }
+}
