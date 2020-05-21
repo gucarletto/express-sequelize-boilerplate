@@ -1,9 +1,12 @@
+import UsuarioController from '../controllers/UsuarioController';
 var express = require('express');
 var router = express.Router();
 
 /* GET lista de usuários. */
-router.get('/', function(req, res, next) {
-  res.send('caiu no rota do usuario');
-});
+router.get('/', UsuarioController.findAll());
+router.post('/', UsuarioController.insert());
+router.put('/:id', UsuarioController.update());
+router.get('/:id', UsuarioController.find());
+router.delete('/:id', UsuarioController.delete());
 
-module.exports = router;
+export default router;

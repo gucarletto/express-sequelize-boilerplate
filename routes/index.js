@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send('caiu no rota do index');
+  res.send('deu boa index');
 });
 
-module.exports = router;
+export default router;
